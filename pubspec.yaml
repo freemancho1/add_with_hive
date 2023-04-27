@@ -1,0 +1,43 @@
+name: add_with_hive
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: any
+
+  go_router: any
+  provider: any
+  window_size:
+    git:
+      url: https://github.com/google/flutter-desktop-embedding.git
+      path: plugins/window_size
+
+  path_provider: any
+  hive: any
+  hive_flutter: any
+
+  logging: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: any
+
+  # database/hive에서 사용
+  # (물론 전처리를 위해 main.dart에서도 사용함)
+  ## hive table을 만들때 사용함
+  hive_generator: any
+  build_runner: any
+
+flutter:
+
+  uses-material-design: true
