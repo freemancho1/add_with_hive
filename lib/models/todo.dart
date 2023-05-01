@@ -1,4 +1,4 @@
-import 'package:add_with_hive/settings/hive.dart';
+import 'package:add_with_hive/sys/utils//hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 part 'todo.g.dart';
@@ -9,15 +9,18 @@ class Todo {
   String title;
 
   @HiveField(1)
-  DateTime? deadline;
+  String subTitle = '';
 
   @HiveField(2)
-  bool isCompleted = false;
+  DateTime? deadline;
 
   @HiveField(3)
-  DateTime? completedAt;
+  bool isCompleted = false;
 
   @HiveField(4)
+  DateTime? completedAt;
+
+  @HiveField(5)
   List<Todo> todos = [];
 
   Todo(this.title);

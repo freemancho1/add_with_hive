@@ -1,11 +1,9 @@
 import 'package:add_with_hive/models/todo.dart';
-import 'package:add_with_hive/settings/hive.dart';
+import 'package:add_with_hive/sys/utils/hive.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:logging/logging.dart';
 
 class TodoBoxViewModel extends ChangeNotifier {
-  static final _log = Logger('TodoBoxViewModel');
 
   final Box<Todo> _todoBox = Hive.box<Todo>(HiveCfg.tableNameTodo);
 

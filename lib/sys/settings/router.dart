@@ -1,11 +1,18 @@
-import 'package:add_with_hive/screens/todo_list.dart';
+import 'package:add_with_hive/screens/todo/list.dart';
+import 'package:add_with_hive/screens/todo/new.dart';
 import 'package:go_router/go_router.dart';
 
 final GoRouter appRouter = GoRouter(
   routes: [
     GoRoute(
       path: '/',
-      builder: (context, state) => const TodoListScreen(),
+      builder: (context, state) => const ListTodoScreen(),
+      routes: [
+        GoRoute(
+          path: 'new',
+          builder: (context, state) => const NewTodoScreen(),
+        )
+      ]
     )
   ]
 );

@@ -1,8 +1,8 @@
 import 'package:add_with_hive/models/todo.dart';
+import 'package:add_with_hive/sys/app_init.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:path_provider/path_provider.dart' as path_provider;
 
-import 'app_init.dart';
 
 class HiveCfg {
   static const tableNameTodo = 'todos';

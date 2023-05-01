@@ -1,11 +1,11 @@
 import 'dart:io';
-import 'package:add_with_hive/settings/hive.dart';
+import 'package:add_with_hive/sys/utils/hive.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:logging/logging.dart';
 import 'package:window_size/window_size.dart';
 
-import 'constants.dart';
+import 'settings/constants.dart';
 
 final Logger appLog = Logger(AppConst.appName);
 
